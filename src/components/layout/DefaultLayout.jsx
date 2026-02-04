@@ -1,13 +1,19 @@
 import Navbar from '../common/Navbar'
 import Footer from '../common/Footer'
+import './DefaultLayout.css'
 
 
 export default function DefaultLayout({ children }) {
     return (
         <>
-            <Navbar />
-            <main>{children}</main>
-            <Footer />
+            <div className="layout">
+                <Navbar />
+                <main className="content">
+                    {children}
+                </main>
+                <Footer />
+            </div>
+
         </>
     )
 
