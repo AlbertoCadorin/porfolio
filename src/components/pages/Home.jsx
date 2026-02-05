@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import './Home.css'
 
 export default function Home() {
@@ -39,12 +40,12 @@ export default function Home() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.8, duration: 0.8 }}
                 >
-                    <a href="#projects" className="home-link">
+                    <Link to="/projects" className="home-link">
                         → guarda i miei progetti
-                    </a>
-                    <a href="#about" className="home-link">
+                    </Link>
+                    <Link to="/about" className="home-link">
                         → scopri di più su di me
-                    </a>
+                    </Link>
                 </motion.div>
             </motion.div>
         </section>
