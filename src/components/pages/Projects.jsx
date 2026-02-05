@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { projects } from "../../data/project";
+import { Link } from "react-router-dom";
 import './Projects.css';
+
 
 
 const Projects = () => {
@@ -26,6 +28,9 @@ const Projects = () => {
                         <span className="project-type">{p.tech.join(', ')}</span>
                     </div>
                 ))}
+                <Link to="/" className="proj-link">
+                    ← torna alla home
+                </Link>
             </div>
         </div>
 
