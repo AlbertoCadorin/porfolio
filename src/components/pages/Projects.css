@@ -97,6 +97,14 @@
     transition: all 0.3s ease;
 }
 
+.project-name:link,
+.project-name:visited,
+.project-name:hover,
+.project-name:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .project-item:hover .project-name {
     color: #ffffff;
     font-weight: 400;

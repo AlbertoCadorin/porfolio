@@ -24,7 +24,9 @@ const Projects = () => {
                         className="project-item"
                         onMouseEnter={() => setActiveProject(p)}
                     >
-                        <span className="project-name">{p.title}</span>
+                        <Link to={`/projects/${p.id}`} className="project-name">
+                            {p.title}
+                        </Link>
                         <span className="project-type">{p.tech.join(', ')}</span>
                     </div>
                 ))}
